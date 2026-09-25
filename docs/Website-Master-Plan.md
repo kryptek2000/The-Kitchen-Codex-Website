@@ -1,9 +1,9 @@
 # The Kitchen Codex — Website Master Plan
 
-**Domain:** kitchencodex.app  
-**Version:** 1.0  
-**Date:** September 25, 2026  
-**Project state:** Planning / pre-build  
+**Domain:** kitchencodex.app
+**Version:** 1.0
+**Date:** September 25, 2026
+**Project state:** Planning / pre-build
 **Release authority:** Sid
 
 ## North Star
