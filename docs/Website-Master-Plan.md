@@ -1,7 +1,7 @@
 # The Kitchen Codex — Website Master Plan
 
 **Domain:** kitchencodex.app
-**Version:** 1.2
+**Version:** 1.3
 **Date:** September 25, 2026
 **Project state:** Planning / pre-build
 **Release authority:** Sid Richmond
@@ -32,7 +32,7 @@ Obsidian remains a valuable integration and acquisition channel, but it does not
 - Stay fast, responsive, accessible, and maintainable.
 
 ## 3. Audience
-Primary audiences include home cooks, recipe collectors, people who save recipes from websites and social media, meal planners, nutrition-conscious users, privacy/ownership-minded users, Obsidian users, users of other productivity/storage ecosystems, existing users, technical/open-source users, and future paying customers.
+Primary audiences include home cooks, recipe collectors, people who save recipes from websites and social media, meal planners, nutrition-conscious users, privacy/ownership-minded users, mobile-first users who shop and cook away from a desktop, Obsidian users, users of other productivity/storage ecosystems, existing users, technical/open-source users, and future paying customers.
 
 The site should not require a visitor to understand Markdown, YAML, frontmatter, local-first architecture, or Obsidian before understanding the product.
 
@@ -129,7 +129,7 @@ Clarity, meaningful navigation to Get Started/Download, understanding of the Vau
 Longer-term growth can also be measured through effective acquisition from integrations and recipe-capture workflows.
 
 ## 14. Deferred Decisions
-Exact pricing, subscription packaging, accounts, payments/licensing, Kitchen Codex Cloud details, final app distribution channels, newsletter/CRM, CMS, public API, community features, specific social connectors, advanced cross-provider synchronization, complex personalization, and the final balance between the labels “The Kitchen Codex Vault” and “My Recipe Vault.”
+Exact pricing, subscription packaging, accounts, payments/licensing, Kitchen Codex Cloud details, final app distribution channels, newsletter/CRM, CMS, public API, community features, specific social connectors, advanced cross-provider synchronization, complex personalization, the final balance between the labels “The Kitchen Codex Vault” and “My Recipe Vault,” and any public launch timing or packaging for Nutrient Tracking / Nutrition Diary.
 
 ## 15. Immediate Next Actions
 1. Use the updated platform-independent product positioning as the homepage foundation.
@@ -207,3 +207,34 @@ Working direction:
 Avoid exposing internal engineering terminology such as bounded estimate policy, mid-flight authority, household resolution contracts, or matching internals in marketing copy.
 
 Exact pricing and subscription packaging remain separate commercial decisions.
+
+
+## 19. Multi-Surface Product Direction
+The current product roadmap explicitly targets one shared Kitchen Codex core delivered through multiple surfaces:
+
+- standalone desktop app
+- official Obsidian plugin
+- mobile/PWA companion
+- optional native mobile wrapper later if PWA limitations justify it
+
+The website should support this direction without making unshipped surfaces appear available.
+
+Public launch copy should identify the surfaces that actually exist at the time of publication. Future surfaces may be described only in clearly labeled roadmap/future-product contexts.
+
+Mobile is strategically important because shopping lists, recipe access, meal plans, Cooking Mode, quick add, and future nutrition logging are especially valuable away from the desktop.
+
+The website architecture and responsive design should therefore avoid treating mobile as merely a smaller marketing viewport. The product story itself increasingly includes mobile use cases.
+
+## 20. Future Feature Watch — Nutrient Tracking / Nutrition Diary
+Nutrient Tracking / Nutrition Diary is now a deliberate future product track, conditional on the AI Advanced Nutrition Engine first meeting its release-quality accuracy, provenance, and coverage gates.
+
+The intended direction is mobile-first, low-friction food logging built on nutrition profiles already known by Kitchen Codex. Potential future capabilities include one-tap “I ate this” logging, serving-aware macro and micronutrient tracking, daily/weekly summaries, meal-plan nutrition previews, repeat-meal shortcuts, history/trends, optional goals with non-medical framing, and provenance-aware logs.
+
+This is a downstream premium/mobile opportunity, not a reason to rush or weaken the nutrition engine.
+
+Website implications:
+- Do **not** market nutrient tracking as a current feature until it ships.
+- Do **not** let future tracking language make the product sound like a generic calorie-counting app.
+- When the feature becomes real, position it as a natural extension of trusted recipe nutrition: Kitchen Codex already understands the recipe, so logging a serving should be simple.
+- Preserve the distinction between Basic Nutrition, AI Advanced Nutrition, and future Nutrient Tracking.
+- Any health/goal language must remain clearly non-medical and factually accurate.
