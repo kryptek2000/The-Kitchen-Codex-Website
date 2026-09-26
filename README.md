@@ -30,8 +30,11 @@ Kitchen Codex application repository.
   plan, shop, cook, and understand over technical storage terminology.
 - Social recipe capture is a strategic growth direction because it can turn
   scattered recipes from the web and social platforms into an organized Vault.
-- Advanced Nutrition is a major product pillar, including AI-assisted
-  interpretation of everyday household amounts and ingredient wording.
+- Nutrition follows a two-tier product strategy: **Basic Nutrition** is part of
+  the free experience, while **AI Advanced Nutrition** is a paid premium engine.
+- AI Advanced Nutrition uses AI for semantic interpretation and orchestration,
+  while deterministic validation, USDA evidence, Kitchen Codex nutrient math,
+  provenance/confidence, and explicit user Review / Apply remain authoritative.
 
 ## Project Documentation
 
