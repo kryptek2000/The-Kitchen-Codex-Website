@@ -17,30 +17,57 @@ This phase is deliberately design-first. No production framework scaffold, compo
 
 ---
 
+## Product Identity Principle
+
+**The Kitchen Codex is the standalone product and brand.**
+
+External platforms and storage providers are integrations beneath the product, not the product's identity.
+
+**The Kitchen Codex Vault** is the product-level concept for the protected home where a user's recipes live.
+
+“**My Recipe Vault**” may be used as a friendlier UI/onboarding label where appropriate.
+
+A Vault may eventually live locally, connect to Obsidian, use Google Drive, use Kitchen Codex Cloud, or use future storage providers without changing the user's core mental model.
+
+---
+
 ## Website Mission
 
 The public website should make The Kitchen Codex understandable, desirable, and trustworthy within seconds.
 
-A first-time visitor should quickly understand that The Kitchen Codex is a recipe, meal-planning, shopping, cooking, and nutrition system centered on the user's own recipe collection and Obsidian vault.
+A first-time visitor should quickly understand that The Kitchen Codex helps them save recipes they care about, protect them in one organized Vault, plan meals, build shopping lists, cook from the same system, and understand recipes through Advanced Nutrition.
+
+The visitor should not need to understand Obsidian, Markdown, YAML, frontmatter, or local-first architecture to understand the product.
 
 The site should communicate three core ideas:
 
 1. **Your recipes remain yours.**
-2. **Your vault remains central.**
+2. **The Kitchen Codex Vault is their protected home.**
 3. **The Kitchen Codex turns that collection into a practical cooking system.**
 
 ---
 
 ## Primary Audiences
 
-### Obsidian users
-People already comfortable with Markdown files, vaults, personal knowledge systems, and user-controlled data.
-
 ### Recipe collectors and home cooks
 People who want a better way to organize recipes, plan meals, shop, cook, scale servings, and work with nutrition information.
 
+### Social and web recipe collectors
+People whose recipes are scattered across links, bookmarks, screenshots, saved social posts, videos, and recipe sites.
+
+This is an important strategic growth audience.
+
+### Meal planners and practical cooks
+People who want the whole workflow connected: recipe → plan → shopping → cooking.
+
+### Nutrition-conscious users
+People who want understandable recipe nutrition without turning the app into a generic calorie tracker.
+
 ### Privacy- and ownership-minded users
-People who prefer their data to remain portable, inspectable, and under their control.
+People who prefer their data to remain portable, inspectable, backed up, and under their control.
+
+### Obsidian users
+A valuable ecosystem audience that may discover The Kitchen Codex through an Obsidian integration/plugin and then become broader app users or paying customers.
 
 ### Technical and open-source visitors
 Developers, contributors, advanced users, reviewers, and people evaluating the project through GitHub.
@@ -53,26 +80,33 @@ Within roughly the first 5–10 seconds, a visitor should be able to answer:
 
 - What is The Kitchen Codex?
 - Why is it different from an ordinary recipe app?
+- Where do my recipes live?
 - Is it relevant to me?
 - What should I do next?
 
-The first screen should establish product identity before feature density.
+The first screen should establish product identity before feature density or integration details.
 
 The site should feel polished, capable, warm, modern, food-aware, technically trustworthy, calm, and premium without feeling corporate.
 
-It should not feel like a generic AI startup, restaurant website, recipe blog, developer dashboard, Obsidian clone, or template full of decorative clutter.
+It should not feel like a generic AI startup, restaurant website, recipe blog, developer dashboard, Obsidian add-on, storage utility, or template full of decorative clutter.
 
 ---
 
 ## Core Positioning
 
-**The Kitchen Codex turns your recipe vault into a complete cooking system.**
+**The Kitchen Codex turns your recipe collection into a complete cooking system built around your Vault.**
 
 Supporting explanation:
 
-Organize recipes, plan meals, build shopping lists, cook step by step, scale servings, manage nutrition, and keep your recipe library in a format you control.
+Save recipes from the places you find them, protect them in The Kitchen Codex Vault, organize them, plan meals, build shopping lists, cook step by step, scale servings, and understand nutrition.
 
 This is a working design anchor, not final launch copy.
+
+Working brand lines include:
+
+- **Protect the recipes you love in The Kitchen Codex Vault.**
+- **Save it. Protect it. Organize it. Cook from it.**
+- **One home for the recipes you collect, cook, and want to keep.**
 
 ---
 
@@ -80,30 +114,61 @@ This is a working design anchor, not final launch copy.
 
 ### 1. Hero
 - Kitchen Codex logo / wordmark
-- concise headline
-- short supporting paragraph
+- concise standalone-product headline
+- Vault/protection supporting message
 - primary CTA
 - secondary CTA
 - real product screenshot or composed product visual
 
-### 2. The Core Idea
+Avoid leading with Obsidian, Markdown, technical storage language, or AI.
+
+### 2. Save What You Love
+Introduce recipe capture/import.
+
+Long-term design direction should support the idea that users can bring recipes in from multiple sources, including web and social channels as those connectors become real.
+
+### 3. Protect It in The Kitchen Codex Vault
+Explain the Vault in plain language:
+- one organized home
+- user control
+- backup/storage flexibility
+- provider-independent concept
+
+Do not imply unshipped cloud/storage options are currently available.
+
+### 4. Plan → Shop → Cook
 Explain the relationship between:
 
-**Recipe Vault → Planning → Shopping → Cooking → Nutrition**
+**Vault → Planning → Shopping → Cooking**
 
-### 3. Product Experience
+### 5. Advanced Nutrition
+Show Advanced Nutrition as a major pillar.
+
+Current shipped capability includes AI-assisted interpretation of everyday household portions and ingredient wording.
+
+Working public direction:
+
+**Nutrition that understands how recipes are actually written.**
+
+Avoid internal architecture terminology.
+
+### 6. Product Experience
 Use real application screenshots for:
 - recipe library / recipe detail
 - meal planner
 - shopping list
 - cooking mode / timers
 - Advanced Nutrition
-- vault integration / local files
+- Vault/storage/connectivity UI when mature enough
 
-### 4. Your Recipes, Your Vault
-Explain local-first ownership and Markdown/Obsidian integration.
+### 7. Integrations
+Explain that The Kitchen Codex can connect to external tools without being defined by them.
 
-### 5. Feature Depth
+Obsidian should be presented as an important integration and acquisition channel.
+
+Future storage and import providers should only be named as supported once shipped.
+
+### 8. Feature Depth
 Possible supporting features:
 - recipe import
 - serving scaling
@@ -114,22 +179,25 @@ Possible supporting features:
 - vault intelligence
 - print/export
 
-### 6. Built for Real Cooking
+### 9. Built for Real Cooking
 Show practical workflows:
+- save a recipe
+- protect it in the Vault
 - plan the week
 - shop once
 - cook without losing your place
 - adjust servings
+- understand nutrition
 - keep the recipe library organized
 
-### 7. Open Project / Trust Layer
+### 10. Open Project / Trust Layer
 Provide access to:
 - GitHub
 - documentation
 - releases/changelog
 - project status
 
-### 8. Final CTA
+### 11. Final CTA
 Repeat the primary next action clearly.
 
 ---
@@ -159,6 +227,8 @@ Preferred launch pages:
 
 - `/` — Home
 - `/features` — Product features and workflows
+- `/nutrition` — Advanced Nutrition
+- `/vault` or How It Works — The Kitchen Codex Vault concept
 - `/docs` — Documentation entry point
 - `/about` — Project identity and philosophy
 - `/faq` — Common product and ownership questions
@@ -178,6 +248,7 @@ Deferred unless justified:
 - large blog operation
 - comparison pages
 - advertising or affiliate surfaces
+- specific social connector pages before those integrations ship
 
 ---
 
@@ -290,13 +361,37 @@ Copy should be:
 - technically accurate
 - easy to scan
 
+Prefer user-facing words such as save, protect, organize, import, connect, sync, back up, plan, shop, cook, and understand.
+
 Avoid:
 - exaggerated AI claims
 - fake urgency
 - empty superlatives
 - enterprise jargon
 - unsupported claims
-- pretending unfinished features exist
+- unnecessary technical storage terminology
+- pretending unfinished features or connectors exist
+
+---
+
+## Integration Strategy
+
+### Obsidian
+Obsidian is an important integration, not the parent brand.
+
+The website should treat an Obsidian plugin/integration as a bridge that can bring Obsidian users into The Kitchen Codex ecosystem.
+
+### Notion and other productivity tools
+These may become useful import/sync integrations, but they are not assumed to be the primary commercial engine.
+
+### Social recipe capture
+Social recipe capture is a strategic growth direction because it addresses a broad consumer problem: recipes saved across many platforms become difficult to find and use.
+
+Long-term product story:
+
+**See a recipe anywhere → save it → normalize it → protect it in The Kitchen Codex Vault → plan → shop → cook → understand nutrition.**
+
+Specific social platforms should only be advertised once their integrations are real and supportable.
 
 ---
 
@@ -345,6 +440,8 @@ Support:
 - structured data where appropriate
 - accessible image descriptions
 
+SEO should describe The Kitchen Codex as a standalone product while allowing specific integration pages to target ecosystem searches.
+
 ---
 
 ## Trust Principles
@@ -355,6 +452,8 @@ Claims involving these topics must be factually verified before launch:
 - AI usage
 - data handling
 - privacy
+- storage providers
+- social connectors
 - supported platforms
 - download availability
 - licensing
@@ -379,6 +478,7 @@ Gather or approve:
 - preferred app theme for marketing screenshots
 - social preview direction
 - workflow diagrams if needed
+- Vault visual/metaphor direction
 - confirmed primary CTA destination
 
 ---
@@ -396,7 +496,8 @@ Gather or approve:
 9. mobile homepage wireframe
 10. CTA decision or documented temporary state
 11. implementation-ready component inventory
-12. explicit Phase 0 approval
+12. initial Vault messaging/terminology decision
+13. explicit Phase 0 approval
 
 ---
 
@@ -413,7 +514,8 @@ Gather or approve:
 - FeatureCard
 - FeatureGrid
 - Workflow / StepSequence
-- Trust / LocalFirst section
+- Vault / Protection section
+- Integration section
 - Callout
 - FAQ
 - FinalCTA
@@ -427,13 +529,16 @@ Before Phase 0 closes:
 
 - homepage purpose is understandable
 - positioning matches the real application
+- The Kitchen Codex is clearly the parent brand
+- Vault terminology is understandable without Obsidian knowledge
 - sitemap is intentionally scoped
 - visual direction matches the app
 - CTAs are defined or explicitly deferred
 - desktop and mobile hierarchy are agreed
 - accessibility constraints are incorporated
 - screenshot strategy is defined
-- unfinished features are not presented as available
+- unfinished features and connectors are not presented as available
+- Advanced Nutrition claims match shipped capability
 - technical direction supports the design without needless complexity
 
 ---
@@ -446,6 +551,8 @@ The team must be able to answer clearly:
 
 - who the site is for
 - what the homepage communicates first
+- what The Kitchen Codex Vault means
+- how Obsidian is positioned
 - what pages launch
 - what the site should look and feel like
 - what the visitor's primary next action is
@@ -464,6 +571,7 @@ That slice should produce:
 
 - homepage wireframe
 - hero concept
+- initial Vault/protection messaging
 - initial color tokens
 - typography pairing
 - navigation model
@@ -483,6 +591,7 @@ Final authority for:
 - visual approval
 - product claims
 - major scope decisions
+- integration positioning
 - release
 - production deployment
 
