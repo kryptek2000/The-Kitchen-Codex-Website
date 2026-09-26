@@ -63,6 +63,9 @@ People who want the whole workflow connected: recipe → plan → shopping → c
 ### Nutrition-conscious users
 People who want understandable recipe nutrition without turning the app into a generic calorie tracker.
 
+### Mobile-first cooks and shoppers
+People who need recipes, shopping lists, meal plans, and Cooking Mode while away from a desktop. The roadmap now explicitly includes a mobile/PWA companion as a long-term product surface.
+
 ### Privacy- and ownership-minded users
 People who prefer their data to remain portable, inspectable, backed up, and under their control.
 
@@ -261,6 +264,7 @@ Deferred unless justified:
 - comparison pages
 - advertising or affiliate surfaces
 - specific social connector pages before those integrations ship
+- Nutrient Tracking / Nutrition Diary pages before that future feature ships
 
 ---
 
@@ -549,8 +553,10 @@ Before Phase 0 closes:
 - desktop and mobile hierarchy are agreed
 - accessibility constraints are incorporated
 - screenshot strategy is defined
-- unfinished features and connectors are not presented as available
+- unfinished features, product surfaces, and connectors are not presented as available
 - Basic Nutrition and AI Advanced Nutrition claims match the current product strategy and shipped capability
+- Nutrient Tracking / Nutrition Diary remains clearly labeled as future/conditional until it ships
+- mobile/PWA claims match the actual released product surface at publication time
 - technical direction supports the design without needless complexity
 
 ---
@@ -620,3 +626,39 @@ Independent QA/review using the current approved lower-cost auditing workflow.
 ---
 
 **Phase 0 principle:** Design the truth of the product beautifully before writing the site around it.
+
+
+---
+
+## Future Product Awareness — Mobile + Nutrient Tracking
+
+Phase 0 should account for the current long-term product roadmap without turning future work into launch promises.
+
+### Mobile/PWA companion
+The Kitchen Codex roadmap now targets a mobile/PWA companion alongside the standalone desktop app and Obsidian plugin.
+
+This matters to website design because several of the strongest real-world Kitchen Codex use cases are inherently mobile:
+- shopping lists in the store
+- recipe access in the kitchen
+- meal-plan reference
+- Cooking Mode
+- quick add/import
+- future nutrition logging
+
+The website's visual system should eventually be able to showcase desktop and phone product surfaces together once those mobile surfaces are real.
+
+### Nutrient Tracking / Nutrition Diary
+Nutrient Tracking / Nutrition Diary is a future mobile-first premium opportunity that becomes eligible only after the AI Advanced Nutrition Engine meets its quality gates.
+
+Potential future experience:
+- one-tap “I ate this” logging from a known recipe or meal-plan entry
+- serving-aware calories/macros
+- supported micronutrients
+- daily/weekly summaries
+- repeat-meal shortcuts
+- meal-plan nutrition previews
+- provenance-aware nutrition history
+
+Design rule: this future feature should **not** appear in launch hero copy, launch feature grids, or pricing claims until implemented and approved.
+
+When it eventually ships, the positioning should emphasize the advantage of a recipe-aware system rather than generic calorie counting: the user's trusted Kitchen Codex recipe already has a serving-based nutrition profile, so logging that meal can be dramatically simpler.
