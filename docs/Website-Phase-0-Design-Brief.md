@@ -35,7 +35,7 @@ A Vault may eventually live locally, connect to Obsidian, use Google Drive, use 
 
 The public website should make The Kitchen Codex understandable, desirable, and trustworthy within seconds.
 
-A first-time visitor should quickly understand that The Kitchen Codex helps them save recipes they care about, protect them in one organized Vault, plan meals, build shopping lists, cook from the same system, and understand recipes through Advanced Nutrition.
+A first-time visitor should quickly understand that The Kitchen Codex helps them save recipes they care about, protect them in one organized Vault, plan meals, build shopping lists, cook from the same system, and understand recipes through a nutrition experience that ranges from free Basic Nutrition to paid AI Advanced Nutrition.
 
 The visitor should not need to understand Obsidian, Markdown, YAML, frontmatter, or local-first architecture to understand the product.
 
@@ -141,16 +141,28 @@ Explain the relationship between:
 
 **Vault → Planning → Shopping → Cooking**
 
-### 5. Advanced Nutrition
-Show Advanced Nutrition as a major pillar.
+### 5. Nutrition — Basic + AI Advanced
+Show nutrition as a major pillar with a clear two-tier product story.
 
-Current shipped capability includes AI-assisted interpretation of everyday household portions and ingredient wording.
+**Basic Nutrition — Free**
+- useful everyday nutrition
+- existing/imported nutrition where available
+- deterministic nutrition behavior where applicable
+- meaningful value without intentional crippling
 
-Working public direction:
+**AI Advanced Nutrition — Paid**
+- AI interprets messy real-world ingredient and portion language
+- handles ambiguity that deterministic parsing alone cannot reliably resolve
+- deterministic validation, USDA evidence, Kitchen Codex math, provenance/confidence, and explicit Review / Apply remain authoritative
+- provider-neutral by design
+
+Working public directions:
+
+**AI interprets. Kitchen Codex verifies. You stay in control.**
 
 **Nutrition that understands how recipes are actually written.**
 
-Avoid internal architecture terminology.
+The homepage should communicate the value difference clearly without exposing internal architecture terminology or implying that AI invents nutritional truth.
 
 ### 6. Product Experience
 Use real application screenshots for:
@@ -227,7 +239,7 @@ Preferred launch pages:
 
 - `/` — Home
 - `/features` — Product features and workflows
-- `/nutrition` — Advanced Nutrition
+- `/nutrition` — Basic Nutrition + AI Advanced Nutrition
 - `/vault` or How It Works — The Kitchen Codex Vault concept
 - `/docs` — Documentation entry point
 - `/about` — Project identity and philosophy
@@ -538,7 +550,7 @@ Before Phase 0 closes:
 - accessibility constraints are incorporated
 - screenshot strategy is defined
 - unfinished features and connectors are not presented as available
-- Advanced Nutrition claims match shipped capability
+- Basic Nutrition and AI Advanced Nutrition claims match the current product strategy and shipped capability
 - technical direction supports the design without needless complexity
 
 ---
@@ -552,6 +564,7 @@ The team must be able to answer clearly:
 - who the site is for
 - what the homepage communicates first
 - what The Kitchen Codex Vault means
+- how Basic Nutrition and AI Advanced Nutrition differ
 - how Obsidian is positioned
 - what pages launch
 - what the site should look and feel like
