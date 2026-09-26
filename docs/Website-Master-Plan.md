@@ -1,7 +1,7 @@
 # The Kitchen Codex — Website Master Plan
 
 **Domain:** kitchencodex.app
-**Version:** 1.1
+**Version:** 1.2
 **Date:** September 25, 2026
 **Project state:** Planning / pre-build
 **Release authority:** Sid Richmond
@@ -66,14 +66,14 @@ Dedicated integration content may later include Obsidian, social recipe capture/
 Do not create pages that imply integrations exist before they are shipped.
 
 ## 6. Homepage Blueprint
-Hero → real product proof → save/capture → Vault protection/ownership → plan/shop/cook → Advanced Nutrition → integrations → feature highlights → trust/quality → final CTA → footer.
+Hero → real product proof → save/capture → Vault protection/ownership → plan/shop/cook → Basic Nutrition + AI Advanced Nutrition → integrations → feature highlights → trust/quality → final CTA → footer.
 
 Working homepage narrative:
 1. **Save what you love.**
 2. **Protect it in The Kitchen Codex Vault.**
 3. **Organize and plan from one place.**
 4. **Shop and cook from the same system.**
-5. **Understand recipes with Advanced Nutrition.**
+5. **Understand recipes with nutrition that grows with you — Basic Nutrition free, AI Advanced Nutrition premium.**
 6. **Connect the tools and services that fit your workflow.**
 
 ## 7. Technical Architecture
@@ -129,7 +129,7 @@ Clarity, meaningful navigation to Get Started/Download, understanding of the Vau
 Longer-term growth can also be measured through effective acquisition from integrations and recipe-capture workflows.
 
 ## 14. Deferred Decisions
-Pricing, accounts, payments/licensing, Kitchen Codex Cloud details, final app distribution channels, newsletter/CRM, CMS, public API, community features, specific social connectors, advanced cross-provider synchronization, complex personalization, and the final balance between the labels “The Kitchen Codex Vault” and “My Recipe Vault.”
+Exact pricing, subscription packaging, accounts, payments/licensing, Kitchen Codex Cloud details, final app distribution channels, newsletter/CRM, CMS, public API, community features, specific social connectors, advanced cross-provider synchronization, complex personalization, and the final balance between the labels “The Kitchen Codex Vault” and “My Recipe Vault.”
 
 ## 15. Immediate Next Actions
 1. Use the updated platform-independent product positioning as the homepage foundation.
@@ -172,17 +172,38 @@ Potential source channels may include social media, video platforms, recipe site
 
 The website must only advertise specific connectors once they are actually supported.
 
-## 18. Advanced Nutrition Positioning
-Advanced Nutrition is a major product pillar.
+## 18. Nutrition Product Strategy
+Nutrition is a major product pillar with a deliberate two-tier model.
 
-Current shipped capability includes AI-assisted interpretation of everyday household portions and ingredient wording as part of the nutrition resolution workflow, including Phase 7:
+### Basic Nutrition — Free
+Basic Nutrition belongs in the free Kitchen Codex experience.
+
+It should support straightforward recipe nutrition using usable nutrition already present in imported or existing recipes and deterministic nutrition behavior where applicable. The free tier should provide real value and should not be intentionally crippled simply to force an upgrade.
+
+### AI Advanced Nutrition — Paid
+AI Advanced Nutrition is the premium nutrition engine.
+
+AI serves as the semantic interpretation and orchestration layer for messy real-world recipe language: ambiguous ingredient wording, household units, counts, ranges, alternatives, portions, and other inputs that are difficult to resolve reliably with deterministic parsing alone.
+
+AI does **not** become the canonical source of nutrition truth. Deterministic validation, USDA evidence, Kitchen Codex nutrient calculation, provenance/confidence, and explicit user **Review / Apply** remain authoritative.
+
+The architecture should remain provider-neutral so no outside AI vendor becomes inseparable from the nutrition product.
+
+### Current foundation
+Existing Advanced Nutrition work remains valuable foundation for the premium engine. Current shipped capability includes Phase 7 AI-assisted household interpretation:
 
 `ba99c2cac9233643b6670ab58a3c91c69ef2382e` — `feat(nutrition): add AI-assisted household resolution`
 
-Public-facing language should remain simple and accurate.
+That implementation milestone should not define the public product story by itself.
+
+### Public messaging direction
+Public-facing language should clearly distinguish free Basic Nutrition from paid AI Advanced Nutrition without overwhelming visitors with architecture.
 
 Working direction:
+- **Basic nutrition when you need the essentials. AI-powered depth when you want more.**
+- **AI interprets. Kitchen Codex verifies. You stay in control.**
 - **Nutrition that understands how recipes are actually written.**
-- **Smarter nutrition from everyday recipe language.**
 
 Avoid exposing internal engineering terminology such as bounded estimate policy, mid-flight authority, household resolution contracts, or matching internals in marketing copy.
+
+Exact pricing and subscription packaging remain separate commercial decisions.
