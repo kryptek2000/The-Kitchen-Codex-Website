@@ -281,6 +281,119 @@ body {
 .cta-inner h2 { margin-bottom: 0.75rem; }
 .cta-inner p { margin: 0; color: var(--muted-on-light); }
 
+/* ---------- Early access signup ---------- */
+.early-access {
+  padding-block: 0 clamp(3rem, 7vw, 5rem);
+}
+.early-access-card {
+  max-width: 44rem;
+  margin-inline: auto;
+  background: var(--paper);
+  border: 1px solid var(--line-on-light);
+  border-top: 4px solid var(--green);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 10px rgba(23, 23, 23, 0.05);
+  padding: clamp(1.6rem, 4vw, 2.5rem);
+  text-align: center;
+}
+.card-index--on-card {
+  margin: 0 0 0.9rem;
+}
+.early-access-card h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+  margin: 0 0 0.6rem;
+}
+.early-access-sub {
+  margin: 0 0 1.6rem;
+  color: var(--muted-on-light);
+  max-width: 46ch;
+  margin-inline: auto;
+}
+.early-access-errors {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.early-access-errors li {
+  margin: 0 0 0.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(140, 47, 27, 0.4);
+  border-left: 4px solid #8c2f1b;
+  border-radius: 8px;
+  background: #f8ece6;
+  color: #6e2313;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.early-access-errors:empty { display: none; }
+.early-access-fields {
+  display: flex;
+  gap: 0.75rem;
+  align-items: stretch;
+  text-align: left;
+}
+.early-access-field { flex: 1 1 auto; min-width: 0; }
+.early-access-label {
+  display: block;
+  margin: 0 0 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #3d3a33;
+}
+.early-access-input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid rgba(23, 23, 23, 0.3);
+  border-radius: 10px;
+}
+.early-access-input::placeholder { color: #8a8474; }
+.early-access-button {
+  flex: none;
+  align-self: end;
+  min-height: 52px;
+  padding: 0.7rem 1.6rem;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 650;
+  color: var(--cream);
+  background: var(--green);
+  border: 1px solid var(--green-deep);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+.early-access-button:hover { background: var(--green-deep); }
+.early-access-button:disabled { opacity: 0.65; cursor: wait; }
+.early-access-trust {
+  margin: 0.9rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted-on-light);
+}
+/* Kit inline success message (rendered by ck.js, styled natively) */
+.early-access-form .formkit-alert-success {
+  margin: 0 0 0.9rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid rgba(58, 107, 81, 0.45);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  background: #edf3ee;
+  color: var(--green-deep);
+  font-size: 1rem;
+  text-align: left;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--ink);
@@ -322,6 +435,9 @@ body {
   /* Polish: lighter promise paragraph on small screens */
   .promise p { font-size: 1.02rem; line-height: 1.68; }
   .cta { text-align: left; }
+  /* Signup stacks full-width on small screens */
+  .early-access-fields { flex-direction: column; }
+  .early-access-button { align-self: stretch; }
 }
 
 /* ---------- Reduced motion ---------- */
