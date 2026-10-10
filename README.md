@@ -23,6 +23,7 @@ Kitchen Codex application repository.
 ## Product Direction
 
 - **The Kitchen Codex is the brand and product.**
+- **Shiso** is the one AI companion being built for the whole Kitchen Codex, with one conversational interface and contextual entry points such as **Ask Shiso** and **Create with Shiso**. Advanced Nutrition is a capability, not a separate chatbot.
 - **The Kitchen Codex Vault** is the product-level home for a user's recipes.
 - **My Recipe Vault** may be used as a friendlier UI/onboarding label.
 - External services such as Obsidian are integrations, not the identity of the product.
@@ -31,8 +32,8 @@ Kitchen Codex application repository.
 - Social recipe capture is a strategic growth direction because it can turn
   scattered recipes from the web and social platforms into an organized Vault.
 - Nutrition follows a two-tier product strategy: **Basic Nutrition** is part of
-  the free experience, while **AI Advanced Nutrition** is a paid premium engine.
-- AI Advanced Nutrition uses AI for semantic interpretation and orchestration,
+  the free experience, while **Advanced Nutrition** is a paid premium engine.
+- Advanced Nutrition uses AI for semantic interpretation and orchestration,
   while deterministic validation, USDA evidence, Kitchen Codex nutrient math,
   provenance/confidence, and explicit user Review / Apply remain authoritative.
 
@@ -43,9 +44,13 @@ Kitchen Codex application repository.
 
 ## Status
 
-Website planning and design foundation.
+A static Coming Soon page is live at kitchencodex.app, with an existing Kit early-access signup. Sid approved the Shiso introduction for release on October 9, 2026 through the existing GitHub-triggered deployment. Shiso itself remains a planned companion, not an available service. The approved hero and visual system are preserved.
 
-Implementation has not yet begun.
+The documentation retains earlier full-launch planning alongside the October 9, 2026 Shiso decision. Future features must be described as planned until released. No new framework or JavaScript is needed for this update.
+
+## Release Process
+
+Pushes to the existing GitHub `main` branch trigger the configured automatic Cloudflare deployment. Verify the live page after each release. No manual Cloudflare, DNS or domain changes are part of the Shiso release.
 
 ## Release Authority
 

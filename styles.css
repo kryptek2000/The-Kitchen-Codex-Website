@@ -1,6 +1,6 @@
 /* The Kitchen Codex — Coming Soon
    Warm archival minimalism: ink, cream, Codex green.
-   No frameworks, no external requests, no JavaScript. */
+   Static HTML/CSS; existing Kit signup is the only script integration. */
 
 :root {
   --ink: #171717;
@@ -225,6 +225,7 @@ body {
 /* ---------- Values ---------- */
 .values { padding-block: clamp(3rem, 7vw, 5rem); }
 .values h2,
+.shiso h2,
 .promise h2,
 .cta h2 {
   font-family: var(--serif);
@@ -262,6 +263,76 @@ body {
   font-size: 1.3rem;
 }
 .value-card p { margin: 0; font-size: 0.98rem; color: #3d3a33; }
+
+/* ---------- Shiso companion ---------- */
+.shiso { padding-block: 0 clamp(3rem, 7vw, 5rem); }
+.shiso-card {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.4rem, 4vw, 2.5rem);
+  background: var(--paper);
+  border: 1px solid var(--line-on-light);
+  border-radius: var(--radius);
+}
+.shiso-copy, .shiso-conversation { min-width: 0; }
+.shiso-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--green-deep);
+}
+.shiso-leaf { flex: none; }
+.shiso-intro {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  color: var(--green-deep);
+}
+.shiso-copy > p:not([class]) { margin: 0 0 1rem; }
+.shiso-nutrition {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted-on-light);
+}
+.shiso-nutrition strong { color: var(--green-deep); }
+.shiso-conversation {
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: 10px;
+  background: var(--cream);
+  border: 1px solid var(--line-on-light);
+}
+.shiso-conversation figcaption {
+  font-size: 0.85rem;
+  color: var(--muted-on-light);
+}
+.shiso-conversation dl { margin: 1rem 0; }
+.shiso-message {
+  padding: 1rem;
+  background: var(--paper);
+  border-left: 3px solid var(--green);
+  border-radius: 0 8px 8px 0;
+}
+.shiso-message + .shiso-message { margin-top: 0.85rem; }
+.shiso-message--user { border-left-color: var(--muted-on-light); }
+.shiso-message dt {
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--green-deep);
+}
+.shiso-message dd { margin: 0; font-size: 1rem; }
+.shiso-concept-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted-on-light);
+}
 
 /* ---------- Promise ---------- */
 .promise {
@@ -417,6 +488,7 @@ body {
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero h1 { max-width: 20ch; }
   .value-grid { grid-template-columns: repeat(2, 1fr); }
+  .shiso-card { grid-template-columns: 1fr; }
   .vault { width: min(300px, 88%); }
 }
 @media (max-width: 540px) {

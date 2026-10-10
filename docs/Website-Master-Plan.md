@@ -1,9 +1,9 @@
 # The Kitchen Codex — Website Master Plan
 
 **Domain:** kitchencodex.app
-**Version:** 1.3
-**Date:** September 25, 2026
-**Project state:** Planning / pre-build
+**Version:** 1.4
+**Date:** October 9, 2026
+**Project state:** Static Coming Soon page; Shiso update approved by Sid for the existing automatic deployment
 **Release authority:** Sid Richmond
 
 ## North Star
@@ -42,7 +42,9 @@ Warm technical aesthetic; real app imagery; restrained near-black, warm cream, a
 Working tokens: `#171717` ink, `#F4EFE4` warm cream, `#3A6B51` Codex green, `#666666` muted gray.
 
 ### Brand hierarchy
-- **The Kitchen Codex** — product and brand.
+- **The Kitchen Codex** — product and primary brand.
+- **Shiso** — the one AI companion inside The Kitchen Codex.
+- **Advanced Nutrition** — a Kitchen Codex capability Shiso may invoke, not a separate companion.
 - **The Kitchen Codex Vault** — product-level recipe home/storage concept.
 - **My Recipe Vault** — optional conversational UI/onboarding label.
 - **Obsidian integration** — external ecosystem integration and acquisition channel.
@@ -66,17 +68,21 @@ Dedicated integration content may later include Obsidian, social recipe capture/
 Do not create pages that imply integrations exist before they are shipped.
 
 ## 6. Homepage Blueprint
-Hero → real product proof → save/capture → Vault protection/ownership → plan/shop/cook → Basic Nutrition + AI Advanced Nutrition → integrations → feature highlights → trust/quality → final CTA → footer.
+Current Coming Soon sequence: approved hero → four product pillars → compact Shiso introduction → brand promise → early-access signup → Coming Soon CTA → footer. The full-launch blueprint below remains future planning; keep Shiso within the product story without letting it dominate.
+
+Hero → real product proof → save/capture → Vault protection/ownership → plan/shop/cook → Basic Nutrition + Advanced Nutrition → integrations → feature highlights → trust/quality → final CTA → footer.
 
 Working homepage narrative:
 1. **Save what you love.**
 2. **Protect it in The Kitchen Codex Vault.**
 3. **Organize and plan from one place.**
 4. **Shop and cook from the same system.**
-5. **Understand recipes with nutrition that grows with you — Basic Nutrition free, AI Advanced Nutrition premium.**
+5. **Understand recipes with nutrition that grows with you — Basic Nutrition free, Advanced Nutrition premium.**
 6. **Connect the tools and services that fit your workflow.**
 
 ## 7. Technical Architecture
+Current pre-launch implementation is a static `index.html` and token-based `styles.css`, with the existing Kit early-access signup. Preserve this lightweight foundation for the Coming Soon page. The framework and infrastructure choices below are earlier full-launch planning proposals, not a statement of the current hosting configuration; reconfirm before future implementation.
+
 - Separate GitHub repository.
 - Astro + selective React as preferred launch framework; Next.js remains an alternative if requirements justify it.
 - Tailwind CSS or a compact token-based CSS system.
@@ -119,6 +125,8 @@ Key discoverability themes may eventually include recipe organization, meal plan
 Avoid keyword stuffing or positioning the entire product around one integration.
 
 ## 12. Hosting & Deployment
+The following is retained full-launch planning, not a verified inventory of the live Coming Soon infrastructure. The initial messaging update was local-only. Sid separately approved committing, pushing and releasing it on October 9, 2026 through the existing GitHub-triggered automatic deployment. Hosting, Cloudflare settings, DNS and domain configuration remain outside this release.
+
 Cloudflare at the domain edge, small Hetzner Cloud production server, containerized deployment from GitHub, staging/preview, minimal exposed services, health checks, and rollback.
 
 GitHub Actions should remain lighter than the application pipeline: CI for formatting/lint/tests/build/accessibility where practical, optional preview deployment, and a production deployment workflow gated on clean CI. Passing automation never replaces explicit release authority.
@@ -132,6 +140,8 @@ Longer-term growth can also be measured through effective acquisition from integ
 Exact pricing, subscription packaging, accounts, payments/licensing, Kitchen Codex Cloud details, final app distribution channels, newsletter/CRM, CMS, public API, community features, specific social connectors, advanced cross-provider synchronization, complex personalization, the final balance between the labels “The Kitchen Codex Vault” and “My Recipe Vault,” and any public launch timing or packaging for Nutrient Tracking / Nutrition Diary.
 
 ## 15. Immediate Next Actions
+For the current Coming Soon slice: local desktop/mobile review is complete and Sid has approved release. Commit and push the approved update through the existing automatic deployment, then verify the live page. Preserve the approved hero, “The recipes you love deserve a home.” The earlier full-launch actions below remain future planning.
+
 1. Use the updated platform-independent product positioning as the homepage foundation.
 2. Inventory the approved logo and current app visual language.
 3. Capture representative app screens.
@@ -180,8 +190,8 @@ Basic Nutrition belongs in the free Kitchen Codex experience.
 
 It should support straightforward recipe nutrition using usable nutrition already present in imported or existing recipes and deterministic nutrition behavior where applicable. The free tier should provide real value and should not be intentionally crippled simply to force an upgrade.
 
-### AI Advanced Nutrition — Paid
-AI Advanced Nutrition is the premium nutrition engine.
+### Advanced Nutrition — Paid
+Advanced Nutrition is the premium nutrition engine.
 
 AI serves as the semantic interpretation and orchestration layer for messy real-world recipe language: ambiguous ingredient wording, household units, counts, ranges, alternatives, portions, and other inputs that are difficult to resolve reliably with deterministic parsing alone.
 
@@ -197,11 +207,11 @@ Existing Advanced Nutrition work remains valuable foundation for the premium eng
 That implementation milestone should not define the public product story by itself.
 
 ### Public messaging direction
-Public-facing language should clearly distinguish free Basic Nutrition from paid AI Advanced Nutrition without overwhelming visitors with architecture.
+Public-facing language should clearly distinguish free Basic Nutrition from paid Advanced Nutrition without overwhelming visitors with architecture.
 
 Working direction:
-- **Basic nutrition when you need the essentials. AI-powered depth when you want more.**
-- **AI interprets. Kitchen Codex verifies. You stay in control.**
+- **Basic nutrition when you need the essentials. Verified depth when you want more.**
+- **Shiso understands. The Kitchen Codex verifies. You stay in control.**
 - **Nutrition that understands how recipes are actually written.**
 
 Avoid exposing internal engineering terminology such as bounded estimate policy, mid-flight authority, household resolution contracts, or matching internals in marketing copy.
@@ -226,7 +236,7 @@ Mobile is strategically important because shopping lists, recipe access, meal pl
 The website architecture and responsive design should therefore avoid treating mobile as merely a smaller marketing viewport. The product story itself increasingly includes mobile use cases.
 
 ## 20. Future Feature Watch — Nutrient Tracking / Nutrition Diary
-Nutrient Tracking / Nutrition Diary is now a deliberate future product track, conditional on the AI Advanced Nutrition Engine first meeting its release-quality accuracy, provenance, and coverage gates.
+Nutrient Tracking / Nutrition Diary is now a deliberate future product track, conditional on the Advanced Nutrition Engine first meeting its release-quality accuracy, provenance, and coverage gates.
 
 The intended direction is mobile-first, low-friction food logging built on nutrition profiles already known by Kitchen Codex. Potential future capabilities include one-tap “I ate this” logging, serving-aware macro and micronutrient tracking, daily/weekly summaries, meal-plan nutrition previews, repeat-meal shortcuts, history/trends, optional goals with non-medical framing, and provenance-aware logs.
 
@@ -236,5 +246,43 @@ Website implications:
 - Do **not** market nutrient tracking as a current feature until it ships.
 - Do **not** let future tracking language make the product sound like a generic calorie-counting app.
 - When the feature becomes real, position it as a natural extension of trusted recipe nutrition: Kitchen Codex already understands the recipe, so logging a serving should be simple.
-- Preserve the distinction between Basic Nutrition, AI Advanced Nutrition, and future Nutrient Tracking.
+- Preserve the distinction between Basic Nutrition, Advanced Nutrition, and future Nutrient Tracking.
 - Any health/goal language must remain clearly non-medical and factually accurate.
+
+
+## 21. Shiso Companion Decision — October 9, 2026
+
+### Brand and conversation model
+**Shiso** (SHISO in internal decision headings) is the official, first-class AI companion for the entire Kitchen Codex. The Kitchen Codex remains the product and primary brand; the Vault remains the recipe home; Advanced Nutrition remains a product capability.
+
+One Shiso brain, one conversational interface, multiple contextual entry points. No separate recipe chatbot or nutrition chatbot. Preferred future language: **Chat with Shiso**, **Ask Shiso**, **Create with Shiso**. Future status examples: “Shiso is thinking…” and “Shiso found 3 recipes in your Vault.”
+
+**Superseded terminology, retained here only as decision history:** “Ask This Recipe,” “Ask My Kitchen,” generic “Kitchen Codex AI” branding, and the separate “Create for me” concept are retired from the forward direction. Earlier nutrition terminology “AI Advanced Nutrition” is now **Advanced Nutrition**; its premium engine and two-tier nutrition strategy remain intact.
+
+### Recipe creation
+**Create with Shiso** replaces the separate **Create for me** entry point without removing recipe generation. It opens the same Shiso conversation in a recipe-creation context: “Make me a chicken pasta” → “Make it dairy free” → “Serve six” → “Make it spicier” → “Looks good. Save it.” Editing, refinement and saving use Kitchen Codex capabilities and their applicable review/apply controls. **New Recipe** can remain the manual creation path.
+
+### Future capability direction
+Shiso will understand requests and invoke Kitchen Codex capabilities for recipe creation and editing, Recipe Vault search, Advanced Nutrition, substitutions, collections, meal planning, shopping lists, leftovers, cooking assistance, timer workflows, and future product capabilities. This is roadmap direction, not a shipped-feature inventory or a launch-date commitment.
+
+### Advanced Nutrition authority
+Shiso understands and orchestrates. Kitchen Codex systems calculate and verify. Preserve this authority chain:
+
+Shiso semantic understanding → deterministic USDA validation → authenticated portion/mass authority → deterministic nutrient calculation → Kitchen Codex Apply/persistence.
+
+The engine’s evidence, provenance/confidence and explicit user Review / Apply remain authoritative. Shiso does not guess authoritative nutrient values. No medical claims. Preserve Basic Nutrition’s free value, Advanced Nutrition’s premium strategy, provider neutrality and the recorded implementation milestone in section 18.
+
+### Current website treatment
+Introduce Shiso after the Preserve / Organize / Cook / Understand cards and before the brand promise. Keep The Kitchen Codex wordmark, hero copy, Vault illustration, four pillars, signup and primary visual system intact. Use a small decorative leaf cue with existing typography and colors; no robot, cartoon chef or new mascot.
+
+Approved-for-local-review positioning: **Meet Shiso — Your Kitchen Codex companion.** Supporting copy explicitly says “We’re building” and “You’ll be able to.” The short conversation is a static concept with the visible disclosure **“Concept preview · Shiso is not available yet.”** No pretend chat inputs, buttons or live service claims.
+
+Nutrition line: **“Shiso will understand the question. The Kitchen Codex will do the math.”** Explain USDA validation and calculation from verified amounts, with user review before applying changes, in ordinary language.
+
+Metadata keeps The Kitchen Codex / Recipe Vault as the primary identity and adds digital recipe organizer, meal planning, nutrition and the Shiso companion being built without keyword stuffing. All current public copy must distinguish planned functionality from available functionality; recheck claims at each release.
+
+### Deferred visual work and release control
+A future Shiso mascot or fuller botanical identity is separate work requiring Sid’s explicit visual-direction approval. Preserve accessibility, responsiveness, contrast, reduced motion, semantic HTML and fast static loading. No extra JavaScript or dependencies for this introduction.
+
+### Decision history
+Version 1.4 records the Shiso decision and current Coming Soon implementation. Prior Vault ownership, integrations, mobile surfaces, nutrition investment, commercial decisions, future tracking gates and Sid’s release authority remain. Earlier Phase 0/full-launch planning is historical context, not a requirement to redesign the approved live hero. The update was prepared locally and reviewed uncommitted. Sid separately approved commit, push and the existing automatic deployment on October 9, 2026. Shiso remains unavailable; publishing the introduction does not release companion functionality.

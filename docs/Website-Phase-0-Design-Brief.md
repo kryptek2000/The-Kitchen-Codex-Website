@@ -2,7 +2,7 @@
 
 **Domain:** kitchencodex.app  
 **Phase:** 0 — Product & Design Foundation  
-**Status:** Approved for design planning; implementation not started  
+**Status:** Historical Phase 0 foundation; static Coming Soon page now implemented. See October 9, 2026 addendum.
 **Project:** The Kitchen Codex Website  
 **Release authority:** Sid Richmond  
 **Primary roadmap:** [Website Master Plan](Website-Master-Plan.md)
@@ -35,7 +35,7 @@ A Vault may eventually live locally, connect to Obsidian, use Google Drive, use 
 
 The public website should make The Kitchen Codex understandable, desirable, and trustworthy within seconds.
 
-A first-time visitor should quickly understand that The Kitchen Codex helps them save recipes they care about, protect them in one organized Vault, plan meals, build shopping lists, cook from the same system, and understand recipes through a nutrition experience that ranges from free Basic Nutrition to paid AI Advanced Nutrition.
+A first-time visitor should quickly understand that The Kitchen Codex helps them save recipes they care about, protect them in one organized Vault, plan meals, build shopping lists, cook from the same system, and understand recipes through a nutrition experience that ranges from free Basic Nutrition to paid Advanced Nutrition.
 
 The visitor should not need to understand Obsidian, Markdown, YAML, frontmatter, or local-first architecture to understand the product.
 
@@ -153,7 +153,7 @@ Show nutrition as a major pillar with a clear two-tier product story.
 - deterministic nutrition behavior where applicable
 - meaningful value without intentional crippling
 
-**AI Advanced Nutrition — Paid**
+**Advanced Nutrition — Paid**
 - AI interprets messy real-world ingredient and portion language
 - handles ambiguity that deterministic parsing alone cannot reliably resolve
 - deterministic validation, USDA evidence, Kitchen Codex math, provenance/confidence, and explicit Review / Apply remain authoritative
@@ -161,7 +161,7 @@ Show nutrition as a major pillar with a clear two-tier product story.
 
 Working public directions:
 
-**AI interprets. Kitchen Codex verifies. You stay in control.**
+**Shiso understands. The Kitchen Codex verifies. You stay in control.**
 
 **Nutrition that understands how recipes are actually written.**
 
@@ -242,7 +242,7 @@ Preferred launch pages:
 
 - `/` — Home
 - `/features` — Product features and workflows
-- `/nutrition` — Basic Nutrition + AI Advanced Nutrition
+- `/nutrition` — Basic Nutrition + Advanced Nutrition
 - `/vault` or How It Works — The Kitchen Codex Vault concept
 - `/docs` — Documentation entry point
 - `/about` — Project identity and philosophy
@@ -554,7 +554,7 @@ Before Phase 0 closes:
 - accessibility constraints are incorporated
 - screenshot strategy is defined
 - unfinished features, product surfaces, and connectors are not presented as available
-- Basic Nutrition and AI Advanced Nutrition claims match the current product strategy and shipped capability
+- Basic Nutrition and Advanced Nutrition claims match the current product strategy and shipped capability
 - Nutrient Tracking / Nutrition Diary remains clearly labeled as future/conditional until it ships
 - mobile/PWA claims match the actual released product surface at publication time
 - technical direction supports the design without needless complexity
@@ -570,7 +570,7 @@ The team must be able to answer clearly:
 - who the site is for
 - what the homepage communicates first
 - what The Kitchen Codex Vault means
-- how Basic Nutrition and AI Advanced Nutrition differ
+- how Basic Nutrition and Advanced Nutrition differ
 - how Obsidian is positioned
 - what pages launch
 - what the site should look and feel like
@@ -648,7 +648,7 @@ This matters to website design because several of the strongest real-world Kitch
 The website's visual system should eventually be able to showcase desktop and phone product surfaces together once those mobile surfaces are real.
 
 ### Nutrient Tracking / Nutrition Diary
-Nutrient Tracking / Nutrition Diary is a future mobile-first premium opportunity that becomes eligible only after the AI Advanced Nutrition Engine meets its quality gates.
+Nutrient Tracking / Nutrition Diary is a future mobile-first premium opportunity that becomes eligible only after the Advanced Nutrition Engine meets its quality gates.
 
 Potential future experience:
 - one-tap “I ate this” logging from a known recipe or meal-plan entry
@@ -662,3 +662,22 @@ Potential future experience:
 Design rule: this future feature should **not** appear in launch hero copy, launch feature grids, or pricing claims until implemented and approved.
 
 When it eventually ships, the positioning should emphasize the advantage of a recipe-aware system rather than generic calorie counting: the user's trusted Kitchen Codex recipe already has a serving-based nutrition profile, so logging that meal can be dramatically simpler.
+
+
+---
+
+## October 9, 2026 Addendum — Shiso on the Coming Soon Page
+
+The earlier full-launch brief remains planning context. The approved static Coming Soon design now exists and its hero, “The recipes you love deserve a home.”, is preserved unchanged.
+
+**The Kitchen Codex** remains the primary product. **Shiso** is its one AI companion across the product. **Advanced Nutrition** is a capability Shiso may invoke; it is not a separate assistant. See [Master Plan section 21](Website-Master-Plan.md#21-shiso-companion-decision--october-9-2026) for the authoritative decision, superseded naming history and full capability roadmap.
+
+Future entry points are **Chat with Shiso**, **Ask Shiso** and **Create with Shiso**, all opening one conversational system. Recipe generation remains; manual creation may use **New Recipe**. Separate recipe/nutrition chatbot directions are retired.
+
+For this pre-launch page, add a restrained companion card below the four product pillars and above the brand promise. Use “Meet Shiso” / “Your Kitchen Codex companion.” with future-tense copy about recipe creation/editing, Vault search, planning, shopping and nutrition. Show only a short static conversation, labeled as a concept and unavailable today. No fake chat controls.
+
+Use the existing cream/ink/green palette, serif headings and a small decorative botanical leaf. No mascot creation without Sid’s separate visual-direction approval. Preserve the hero, brand hierarchy, signup, responsive behavior and reduced motion. Add no scripts or dependencies.
+
+Nutrition copy must preserve the engine’s authority: Shiso understands and orchestrates; Kitchen Codex validates against USDA data and calculates nutrients from verified ingredient amounts, with explicit user Review / Apply. No guessed authoritative numbers or medical claims. The two-tier Basic Nutrition / premium Advanced Nutrition strategy remains unchanged.
+
+The Shiso change was initially authorized for local implementation and review only. Sid separately approved commit, push and release through the existing automatic deployment on October 9, 2026. Sid retains final release authority. Existing full-launch CTA and framework proposals do not justify changing the Coming Soon page’s working signup or static architecture.
