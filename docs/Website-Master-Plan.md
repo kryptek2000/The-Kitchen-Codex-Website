@@ -3,7 +3,7 @@
 **Domain:** kitchencodex.app
 **Version:** 1.5
 **Date:** October 14, 2026
-**Project state:** Approved Coming Soon design preserved; official SHISO mascot approved October 14; mascot website update prepared for review, not released
+**Project state:** Approved Coming Soon design preserved; official SHISO mascot release authorized October 14; production verification pending
 **Release authority:** Sid Richmond
 
 ## North Star
@@ -305,7 +305,7 @@ Version 1.4 records the Shiso decision and current Coming Soon implementation. P
 
 Official character approved; visual specifications and source concept captured. This is a branding milestone, not evidence of product functionality.
 
-### M1 — Static website introduction (IN REVIEW)
+### M1 — Static website introduction (RELEASE APPROVED; VERIFY PRODUCTION)
 
 Replace the Coming Soon page's older simulated chat concept with the official mascot image inside the existing "Meet Shiso" section. Preserve the approved hero headline, CSS recipe-card visual, four pillars, brand promise, Kit signup, metadata, and responsive/static architecture. The image is an illustration, **not** a screenshot or a live chat widget. Public copy must accurately describe private development/testing and must not claim general availability. No additional JavaScript.
 
@@ -315,7 +315,7 @@ Integrate a lightweight character in the shared Chat with Shiso surface with a s
 
 ### M3 — Website motion and storytelling (PLANNED)
 
-Only after M1 is approved and performance budgets are met, evaluate restrained, optional CSS-led character motion (gentle float/blink or purposeful state demonstrations). No automatic video, large animation libraries, continuous battery-hungry rendering, or inaccessible content. Preserve meaningful alt text and a motion-free representation.
+Only after M1 is deployed, verified, and performance budgets are met, evaluate restrained, optional CSS-led character motion (gentle float/blink or purposeful state demonstrations). No automatic video, large animation libraries, continuous battery-hungry rendering, or inaccessible content. Preserve meaningful alt text and a motion-free representation.
 
 ### M4 — Extended character system (FUTURE)
 
