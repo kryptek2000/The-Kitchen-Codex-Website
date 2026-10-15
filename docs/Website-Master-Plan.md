@@ -1,9 +1,9 @@
 # The Kitchen Codex — Website Master Plan
 
 **Domain:** kitchencodex.app
-**Version:** 1.4
-**Date:** October 9, 2026
-**Project state:** Static Coming Soon page; Shiso update approved by Sid for the existing automatic deployment
+**Version:** 1.5
+**Date:** October 14, 2026
+**Project state:** Approved Coming Soon design preserved; official SHISO mascot release authorized October 14; production verification pending
 **Release authority:** Sid Richmond
 
 ## North Star
@@ -273,16 +273,54 @@ Shiso semantic understanding → deterministic USDA validation → authenticated
 The engine’s evidence, provenance/confidence and explicit user Review / Apply remain authoritative. Shiso does not guess authoritative nutrient values. No medical claims. Preserve Basic Nutrition’s free value, Advanced Nutrition’s premium strategy, provider neutrality and the recorded implementation milestone in section 18.
 
 ### Current website treatment
-Introduce Shiso after the Preserve / Organize / Cook / Understand cards and before the brand promise. Keep The Kitchen Codex wordmark, hero copy, Vault illustration, four pillars, signup and primary visual system intact. Use a small decorative leaf cue with existing typography and colors; no robot, cartoon chef or new mascot.
+Introduce Shiso after the Preserve / Organize / Cook / Understand cards and before the brand promise. Keep The Kitchen Codex wordmark, hero copy, Vault illustration, four pillars, signup and primary visual system intact. The October 14 mascot decision supersedes the earlier no-mascot restriction; see section 22. Keep typography, hero, signup, and brand hierarchy intact.
 
-Approved-for-local-review positioning: **Meet Shiso — Your Kitchen Codex companion.** Supporting copy explicitly says “We’re building” and “You’ll be able to.” The short conversation is a static concept with the visible disclosure **“Concept preview · Shiso is not available yet.”** No pretend chat inputs, buttons or live service claims.
+Approved-for-local-review positioning: **Meet Shiso — Your Kitchen Codex companion.** Supporting copy explicitly says “We’re building” and “You’ll be able to.” The earlier short static conversation preview is superseded by the approved official SHISO mascot artwork, with a visible private-testing disclosure. No pretend chat inputs, buttons or live service claims.
 
 Nutrition line: **“Shiso will understand the question. The Kitchen Codex will do the math.”** Explain USDA validation and calculation from verified amounts, with user review before applying changes, in ordinary language.
 
 Metadata keeps The Kitchen Codex / Recipe Vault as the primary identity and adds digital recipe organizer, meal planning, nutrition and the Shiso companion being built without keyword stuffing. All current public copy must distinguish planned functionality from available functionality; recheck claims at each release.
 
 ### Deferred visual work and release control
-A future Shiso mascot or fuller botanical identity is separate work requiring Sid’s explicit visual-direction approval. Preserve accessibility, responsiveness, contrast, reduced motion, semantic HTML and fast static loading. No extra JavaScript or dependencies for this introduction.
+Sid explicitly approved the official SHISO mascot artwork on October 14, 2026. Future animation is separate phased work requiring subsequent implementation review. Preserve accessibility, responsiveness, contrast, reduced motion, semantic HTML and fast static loading. No extra JavaScript or dependencies for this introduction.
 
 ### Decision history
 Version 1.4 records the Shiso decision and current Coming Soon implementation. Prior Vault ownership, integrations, mobile surfaces, nutrition investment, commercial decisions, future tracking gates and Sid’s release authority remain. Earlier Phase 0/full-launch planning is historical context, not a requirement to redesign the approved live hero. The update was prepared locally and reviewed uncommitted. Sid separately approved commit, push and the existing automatic deployment on October 9, 2026. Shiso remains unavailable; publishing the introduction does not release companion functionality.
+
+
+---
+
+## 22. Official SHISO Mascot Approval and Animation Phases — October 14, 2026
+
+**Approved by Sid:** The generated leaf-inspired, charcoal-and-green floating culinary AI companion is the official visual mascot for Shiso. This supersedes the earlier October 9 design instruction to avoid creating a robot or mascot. Shiso remains subordinate to **The Kitchen Codex** product brand, not a separate product.
+
+### Canonical visual direction
+
+- **Signature character:** compact floating companion; glossy near-black face with friendly expressive green eyes and warm amber accents; shiso-leaf hood and leafy details; restrained gold framing.
+- **Brand fit:** the existing near-black, warm cream and Codex green design remains authoritative; the mascot's brighter accent glow is contained within the illustration and should not recolor the entire website.
+- **Approved source:** original user-approved SHISO concept illustration, generated October 14, 2026. The website derivative at `assets/shiso-official-mascot.webp` is an optimized crop of that approved artwork. Preserve the original for future animation and high-resolution brand assets.
+- **Presentation:** character-led, warm, intelligent, premium and distinctive. Avoid generic robot, cartoon chef or childish expressions.
+
+### M0 — Identity approval (DONE)
+
+Official character approved; visual specifications and source concept captured. This is a branding milestone, not evidence of product functionality.
+
+### M1 — Static website introduction (RELEASE APPROVED; VERIFY PRODUCTION)
+
+Replace the Coming Soon page's older simulated chat concept with the official mascot image inside the existing "Meet Shiso" section. Preserve the approved hero headline, CSS recipe-card visual, four pillars, brand promise, Kit signup, metadata, and responsive/static architecture. The image is an illustration, **not** a screenshot or a live chat widget. Public copy must accurately describe private development/testing and must not claim general availability. No additional JavaScript.
+
+### M2 — In-app animated SHISO companion (PLANNED, after reliability/performance acceptance)
+
+Integrate a lightweight character in the shared Chat with Shiso surface with a static fallback and meaningful application-owned states: idle, thinking, investigating, responding, success, and clarification/error. Animations must react to real app activity, never imply nonexistent tool work. Provide `prefers-reduced-motion` support, avoid large sprite/video payloads, and do not block chat input or worsen provider latency. Measure CPU/memory and rendering cost on modest hardware. Prioritize fixing SHISO's human-test issues before animation.
+
+### M3 — Website motion and storytelling (PLANNED)
+
+Only after M1 is deployed, verified, and performance budgets are met, evaluate restrained, optional CSS-led character motion (gentle float/blink or purposeful state demonstrations). No automatic video, large animation libraries, continuous battery-hungry rendering, or inaccessible content. Preserve meaningful alt text and a motion-free representation.
+
+### M4 — Extended character system (FUTURE)
+
+Explore pose/expression sheets for onboarding, documentation, feature tours, social media, optional audio/voice, and future integrated Kitchen Codex surfaces. These are proposals, not shipping commitments.
+
+### Release and quality gates
+
+Sid retains final approval for mascot placement and production deployment. Website source changes are reviewed separately from the app's uncommitted SHISO implementation and Muse audit. Do not merge/deploy this website change solely because the asset is approved. Validate desktop/mobile layouts, asset loading, accessibility, SEO, static page behavior, and signup before release. Accurate capability language takes precedence over marketing enthusiasm.

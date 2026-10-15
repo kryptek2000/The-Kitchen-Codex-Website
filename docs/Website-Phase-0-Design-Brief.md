@@ -681,3 +681,16 @@ Use the existing cream/ink/green palette, serif headings and a small decorative 
 Nutrition copy must preserve the engine’s authority: Shiso understands and orchestrates; Kitchen Codex validates against USDA data and calculates nutrients from verified ingredient amounts, with explicit user Review / Apply. No guessed authoritative numbers or medical claims. The two-tier Basic Nutrition / premium Advanced Nutrition strategy remains unchanged.
 
 The Shiso change was initially authorized for local implementation and review only. Sid separately approved commit, push and release through the existing automatic deployment on October 9, 2026. Sid retains final release authority. Existing full-launch CTA and framework proposals do not justify changing the Coming Soon page’s working signup or static architecture.
+
+
+---
+
+## October 14, 2026 Addendum — SHISO Official Mascot Approval
+
+Sid has approved the official leaf-inspired SHISO AI companion character. This **supersedes** the October 9 "no mascot creation" direction while preserving the approved static Coming Soon layout, hero, brand hierarchy, signup, and warm ink/cream/Codex-green visual system.
+
+The website's existing "Meet Shiso" section is the approved placement for a static, accessible illustration. Use the optimized derivative of the original approved artwork at `assets/shiso-official-mascot.webp`, with meaningful alt text and a disclosure that the companion is in private testing and not publicly available. Do not imply the illustrated nutrition panels are genuine nutrition results or that the website hosts a live chat.
+
+**Mascot phases:** M0 approved identity (done); M1 static website introduction (review); M2 lightweight stateful animation inside the app (planned after SHISO speed and reliability acceptance); M3 optional restrained website animation (planned); M4 broader expression/voice/marketing system (future).
+
+Use static HTML/CSS, `prefers-reduced-motion`, minimal payloads, and no new dependencies. Full design and release gates are recorded in [Website Master Plan §22](Website-Master-Plan.md#22-official-shiso-mascot-approval-and-animation-phases--october-14-2026). Sid retains final release authority.
