@@ -33,9 +33,8 @@ Kitchen Codex application repository.
   scattered recipes from the web and social platforms into an organized Vault.
 - Nutrition follows a two-tier product strategy: **Basic Nutrition** is part of
   the free experience, while **Advanced Nutrition** is a paid premium engine.
-- Advanced Nutrition uses AI for semantic interpretation and orchestration,
-  while deterministic validation, USDA evidence, Kitchen Codex nutrient math,
-  provenance/confidence, and explicit user Review / Apply remain authoritative.
+- **AI-first nutrition is the approved future direction:** Shiso leads whole-recipe interpretation and can draw on the USDA catalog, Kitchen Codex calculation tools, and (when developed and enabled) trustworthy outside food references. Useful estimates may be explicitly identified rather than blocked by an absent USDA household portion.
+- Preserve clear source/estimate labels, honest partial subtotals, serving math, and explicit review/save authorization. Web-backed nutrition research and broad AI-generated estimates remain **planned and not advertised as live**.
 
 ## Project Documentation
 
@@ -46,7 +45,7 @@ Kitchen Codex application repository.
 
 A static Coming Soon page is live at kitchencodex.app, with an existing Kit early-access signup. Sid approved the Shiso introduction for release on October 9, 2026 through the existing GitHub-triggered deployment. Shiso itself remains a planned companion, not an available service. The approved hero and visual system are preserved.
 
-The documentation retains earlier full-launch planning alongside the October 9, 2026 Shiso decision. Future features must be described as planned until released. No new framework or JavaScript is needed for this update.
+The documentation retains earlier full-launch planning alongside the October 9 Shiso identity decision and the October 16 AI-first nutrition decision. Future features must be described as planned until released. No new framework or JavaScript is needed for this update.
 
 ## Release Process
 
