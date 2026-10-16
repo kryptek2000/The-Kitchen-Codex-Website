@@ -1,9 +1,9 @@
 # The Kitchen Codex — Website Master Plan
 
 **Domain:** kitchencodex.app
-**Version:** 1.5
-**Date:** October 14, 2026
-**Project state:** Approved Coming Soon design preserved; official SHISO mascot release authorized October 14; production verification pending
+**Version:** 1.6
+**Date:** October 16, 2026
+**Project state:** Approved Coming Soon site preserved; Shiso in private testing; AI-first nutrition direction approved for future implementation, not announced as shipped
 **Release authority:** Sid Richmond
 
 ## North Star
@@ -182,42 +182,38 @@ Potential source channels may include social media, video platforms, recipe site
 
 The website must only advertise specific connectors once they are actually supported.
 
-## 18. Nutrition Product Strategy
-Nutrition is a major product pillar with a deliberate two-tier model.
+## 18. Nutrition Product Strategy — AI-First Decision, October 16, 2026
 
-### Basic Nutrition — Free
-Basic Nutrition belongs in the free Kitchen Codex experience.
+**Product decision:** Shiso should lead recipe nutrition interpretation and estimates, using the Kitchen Codex's existing USDA catalog, deterministic tools, and trusted web sources as resources rather than as a gate that prevents any useful result when a source portion is unavailable. This replaces the older USDA-only authority assumption in this document. Sid remains final release authority.
 
-It should support straightforward recipe nutrition using usable nutrition already present in imported or existing recipes and deterministic nutrition behavior where applicable. The free tier should provide real value and should not be intentionally crippled simply to force an upgrade.
+### Basic Nutrition — Free, immediate usefulness
+- One-click essential nutrition on the main recipe card and in the editor: calories, protein, carbohydrates, fat, and supported additional values, with a clear per-serving basis.
+- Keep an offline/no-provider path so free Basic remains useful without Gemini availability or paid API calls.
+- When coverage is partial, show known **subtotals** labeled as incomplete. Unknown nutrient totals remain unknown; genuine supported zeros stay zero. Do not make an incomplete subtotal look like a full recipe estimate.
+- Shiso may optionally improve coverage through AI assistance where available and properly enabled, but that must not silently convert Basic into a paid dependency.
+- Explicit user-directed save only; partial, estimated, and complete provenance must survive Markdown saving and reopening.
 
-### Advanced Nutrition — Paid
-Advanced Nutrition is the premium nutrition engine.
+### Advanced Nutrition — Premium depth, AI-led reasoning
+- Shiso considers the **whole recipe**: food identity, preparation, volume vs. count vs. weight, raw/cooked and edible-yield assumptions, brand-specific foods, and whether a wrapper or garnish is eaten.
+- Shiso may use the authenticated pinned USDA catalog, existing calculator and matching tools, credible external food/brand/portion references through a safe research interface, and clearly identified AI inference. No single catalog's absence of an exact household portion should automatically block a reasonable estimate.
+- Present ingredient evidence as **source-backed**, **source-informed estimated portion**, **AI-supported approximation**, or **unresolved/unknown**. Record the selected food, quantity assumption, source or reference where available, confidence, and nutrient basis.
+- Distinguish the **nutritional estimate** from a laboratory measurement. Deterministic arithmetic, serving conversions, freshness checks, bounded inputs, transparent uncertainty, and explicit user Review / Apply / Save remain protections against silent corruption, not obstacles to AI interpretation.
+- If no defensible basis exists for a specific value, mark it unknown rather than fabricate precision. The product aims to deliver the best supported useful result and a transparent explanation, not a guarantee of complete coverage for every conceivable ingredient.
+- Use provider-neutral infrastructure, explicit consent and pricing guards for paid calls, safe/allowlisted or otherwise SSRF-resistant web retrieval, bounded requests, and provenance. **Web-backed nutrition lookup is a planned capability, not a currently verified shipped function.**
 
-AI serves as the semantic interpretation and orchestration layer for messy real-world recipe language: ambiguous ingredient wording, household units, counts, ranges, alternatives, portions, and other inputs that are difficult to resolve reliably with deterministic parsing alone.
+### Practical acceptance criteria
+1. Ordinary recipes get a useful Basic estimate without navigating a dozen ingredient approval dialogs; partial contributions are visible rather than a blank panel.
+2. Advanced can estimate a tortilla count from a documented typical weight when a USDA portion is absent; it never relabels that estimate as a USDA portion.
+3. Food identity and units remain truthful: whole eggs are not mechanically separated meat; sour-orange **cups** are not fruit **yield counts**; raw/cooked and lean-only/lean-and-fat meat are not silently interchangeable.
+4. Ingredient context matters: banana leaves used as a wrapper are not treated as edible banana, and non-eaten exclusions are disclosed/reviewable.
+5. A provider failure must not erase completed work or claim a change that was not applied. Human browser tests, including Apply / Save / reopen in a disposable Vault, govern acceptance.
 
-AI does **not** become the canonical source of nutrition truth. Deterministic validation, USDA evidence, Kitchen Codex nutrient calculation, provenance/confidence, and explicit user **Review / Apply** remain authoritative.
+### Release and website language
+Maintain the two-tier product direction (Basic free; Advanced premium) without announcing a paid plan, AI web search, broad SHISO capabilities, or an automatic full nutritional estimate as currently available before verification and release.
 
-The architecture should remain provider-neutral so no outside AI vendor becomes inseparable from the nutrition product.
+Public copy should be plain-language: **“Shiso is being built to help you understand what's in a recipe—using food data, relevant research and clearly explained estimates.”** The existing Coming Soon page retains its hero, approved illustration, early-access signup and private-testing disclaimer.
 
-### Current foundation
-Existing Advanced Nutrition work remains valuable foundation for the premium engine. Current shipped capability includes Phase 7 AI-assisted household interpretation:
-
-`ba99c2cac9233643b6670ab58a3c91c69ef2382e` — `feat(nutrition): add AI-assisted household resolution`
-
-That implementation milestone should not define the public product story by itself.
-
-### Public messaging direction
-Public-facing language should clearly distinguish free Basic Nutrition from paid Advanced Nutrition without overwhelming visitors with architecture.
-
-Working direction:
-- **Basic nutrition when you need the essentials. Verified depth when you want more.**
-- **Shiso understands. The Kitchen Codex verifies. You stay in control.**
-- **Nutrition that understands how recipes are actually written.**
-
-Avoid exposing internal engineering terminology such as bounded estimate policy, mid-flight authority, household resolution contracts, or matching internals in marketing copy.
-
-Exact pricing and subscription packaging remain separate commercial decisions.
-
+The prior direction—“AI only interprets while authenticated USDA portions alone determine every gram and nutrient”—is **superseded for future product architecture**. Provenance, safe tool execution, explicit saving, and accurate disclosure remain mandatory.
 
 ## 19. Multi-Surface Product Direction
 The current product roadmap explicitly targets one shared Kitchen Codex core delivered through multiple surfaces:
@@ -266,18 +262,18 @@ One Shiso brain, one conversational interface, multiple contextual entry points.
 Shiso will understand requests and invoke Kitchen Codex capabilities for recipe creation and editing, Recipe Vault search, Advanced Nutrition, substitutions, collections, meal planning, shopping lists, leftovers, cooking assistance, timer workflows, and future product capabilities. This is roadmap direction, not a shipped-feature inventory or a launch-date commitment.
 
 ### Advanced Nutrition authority
-Shiso understands and orchestrates. Kitchen Codex systems calculate and verify. Preserve this authority chain:
+**October 16 update supersedes the earlier USDA-only gate.** Shiso leads nutrition interpretation and may create clearly labeled estimates when supported source data or exact household portions are unavailable. Kitchen Codex tools continue to provide sourced nutrient evidence, reproducible math, validated state changes and user-controlled persistence. AI-generated assumptions are not misrepresented as measured USDA facts.
 
-Shiso semantic understanding → deterministic USDA validation → authenticated portion/mass authority → deterministic nutrient calculation → Kitchen Codex Apply/persistence.
+The intended flow is: Shiso interprets the full recipe → uses catalog and source research where applicable → proposes documented estimates for gaps → calculation and provenance layer checks and totals the evidence → user reviews, applies and explicitly saves.
 
-The engine’s evidence, provenance/confidence and explicit user Review / Apply remain authoritative. Shiso does not guess authoritative nutrient values. No medical claims. Preserve Basic Nutrition’s free value, Advanced Nutrition’s premium strategy, provider neutrality and the recorded implementation milestone in section 18.
+This is a future implementation direction; availability of web research and full Advanced Nutrition AI estimates must be separately verified before public claims.
 
 ### Current website treatment
 Introduce Shiso after the Preserve / Organize / Cook / Understand cards and before the brand promise. Keep The Kitchen Codex wordmark, hero copy, Vault illustration, four pillars, signup and primary visual system intact. The October 14 mascot decision supersedes the earlier no-mascot restriction; see section 22. Keep typography, hero, signup, and brand hierarchy intact.
 
 Approved-for-local-review positioning: **Meet Shiso — Your Kitchen Codex companion.** Supporting copy explicitly says “We’re building” and “You’ll be able to.” The earlier short static conversation preview is superseded by the approved official SHISO mascot artwork, with a visible private-testing disclosure. No pretend chat inputs, buttons or live service claims.
 
-Nutrition line: **“Shiso will understand the question. The Kitchen Codex will do the math.”** Explain USDA validation and calculation from verified amounts, with user review before applying changes, in ordinary language.
+Nutrition line: **“Shiso explores the ingredients. You see what's known—and what's estimated.”** Explain useful source-backed nutrition and clearly marked estimates, with user control over reviewing and saving. Never promise web research or complete estimates as shipped while under development.
 
 Metadata keeps The Kitchen Codex / Recipe Vault as the primary identity and adds digital recipe organizer, meal planning, nutrition and the Shiso companion being built without keyword stuffing. All current public copy must distinguish planned functionality from available functionality; recheck claims at each release.
 
@@ -324,3 +320,12 @@ Explore pose/expression sheets for onboarding, documentation, feature tours, soc
 ### Release and quality gates
 
 Sid retains final approval for mascot placement and production deployment. Website source changes are reviewed separately from the app's uncommitted SHISO implementation and Muse audit. Do not merge/deploy this website change solely because the asset is approved. Validate desktop/mobile layouts, asset loading, accessibility, SEO, static page behavior, and signup before release. Accurate capability language takes precedence over marketing enthusiasm.
+
+
+## 23. AI-First Nutrition Decision and Current Testing — October 16, 2026
+
+Sid approved **AI-first Shiso nutrition** as the future direction after real browser tests exposed USDA-portion dead ends and blank Basic panels. Retain and build on the local nutrition repairs; do not discard proven parsing, USDA, serving, schema-4 estimate and persistence work. Luna's consolidated functional repair is ongoing and remains uncommitted pending Sid's live acceptance. This website roadmap records product direction, **not** a claim that web research or unconstrained AI nutrition has shipped.
+
+The current report says Basic can show labeled partial subtotals and save them with explicit acknowledgement, with sample coverage improvements in enchiladas, guacamole, Huevos Rancheros and Cochinita Pibil. Source nutrient gaps may still leave totals unknown. Those implementation claims require browser verification before promoting them to public-facing feature statements.
+
+**Website treatment:** Update only the Shiso section's forward-looking explanation; preserve the approved hero, artwork, color system, signup and accessibility. Keep the site in **Coming Soon / private testing** status. A proposed source change must be reviewed and separately authorized for deployment; GitHub main triggers production deployment.
