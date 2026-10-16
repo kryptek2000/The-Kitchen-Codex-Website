@@ -346,7 +346,7 @@ The current report says Basic can show labeled partial subtotals and save them w
 | Nutrition | **Advanced Nutrition** is the premium feature; **Nutrition with Shiso** is its internal experience | Planned single Analyze Recipe flow, optional offline source pass, clear estimates and explicit Apply/Save |
 | Vault integrity | **Vault Intelligence** — inspect Vault health %, formatting, metadata and repair suggestions | **Retain existing dashboard, scanner, health score and repair tools**; Shiso-operated workflows are planned, not shipped |
 
-**Vault Intelligence brand rule:** Do not rename the dashboard to a generic AI chat or hide the current Vault Health percentage. Health remains a measured deterministic scanner result, not a judgment SHISO generates. Shiso may explain a real scan, identify affected recipes, and prepare previewable repairs, but writes require user authorization.
+**Vault Intelligence brand rule:** Do not rename the dashboard to a generic AI chat or hide the existing **Vault Health %** display. Health remains a measured deterministic scanner result, not a judgment SHISO generates. Shiso may explain a real scan, identify affected recipes, and prepare previewable repairs, but writes require user authorization.
 
 ### Planned Vault Intelligence UX
 
