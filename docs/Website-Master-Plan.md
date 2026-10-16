@@ -1,9 +1,9 @@
 # The Kitchen Codex — Website Master Plan
 
 **Domain:** kitchencodex.app
-**Version:** 1.6
+**Version:** 1.7
 **Date:** October 16, 2026
-**Project state:** Approved Coming Soon site preserved; Shiso in private testing; AI-first nutrition direction approved for future implementation, not announced as shipped
+**Project state:** Approved Coming Soon site preserved; Shiso private testing; AI-first nutrition and unified SHISO kitchen/Vault Intelligence roadmap approved as future direction, not claimed shipped
 **Release authority:** Sid Richmond
 
 ## North Star
@@ -329,3 +329,47 @@ Sid approved **AI-first Shiso nutrition** as the future direction after real bro
 The current report says Basic can show labeled partial subtotals and save them with explicit acknowledgement, with sample coverage improvements in enchiladas, guacamole, Huevos Rancheros and Cochinita Pibil. Source nutrient gaps may still leave totals unknown. Those implementation claims require browser verification before promoting them to public-facing feature statements.
 
 **Website treatment:** Update only the Shiso section's forward-looking explanation; preserve the approved hero, artwork, color system, signup and accessibility. Keep the site in **Coming Soon / private testing** status. A proposed source change must be reviewed and separately authorized for deployment; GitHub main triggers production deployment.
+
+
+
+## 24. Unified SHISO Experiences and Vault Intelligence — October 16, 2026
+
+**Approved product direction:** SHISO is the single AI companion throughout The Kitchen Codex. The app may expose multiple convenient entry points, but not separate competing chatbot identities or independent AI Settings. Preserve the existing useful subsystems, especially the **Vault Intelligence** dashboard and its real health percentage.
+
+### Product experience and language
+
+| Experience | Name / user story | Status and website treatment |
+| --- | --- | --- |
+| General help | **Chat with Shiso** — ask about cooking and recipes | Private development/testing; do not claim broad release |
+| Recipe generation | **Create with Shiso** — make and refine a recipe in the same conversation, then explicitly save | Planned consolidation of the existing Create for Me capability; not a new shipped generator |
+| Vault search | **Explore My Vault** — find real recipes by ingredient, tags, cuisine or time | Planned consolidation of Ask My Kitchen using real Vault search; not an invented AI search index |
+| Nutrition | **Advanced Nutrition** is the premium feature; **Nutrition with Shiso** is its internal experience | Planned single Analyze Recipe flow, optional offline source pass, clear estimates and explicit Apply/Save |
+| Vault integrity | **Vault Intelligence** — inspect Vault health %, formatting, metadata and repair suggestions | **Retain existing dashboard, scanner, health score and repair tools**; Shiso-operated workflows are planned, not shipped |
+
+**Vault Intelligence brand rule:** Do not rename the dashboard to a generic AI chat or hide the current Vault Health percentage. Health remains a measured deterministic scanner result, not a judgment SHISO generates. Shiso may explain a real scan, identify affected recipes, and prepare previewable repairs, but writes require user authorization.
+
+### Planned Vault Intelligence UX
+
+- Health % remains prominent beside real last-scan state and issue summaries where supported by the app's measured data.
+- Users can inspect why the score changed, review formatting/metadata issues by recipe, and distinguish safely mechanical fixes from ambiguous repairs.
+- Future Shiso queries include “Why is my Vault health low?”, “Which recipes need formatting fixes?”, and “Prepare a repair preview.”
+- Preserve exact recipe content and user edits; use previews, explicit confirmation, existing authorized Vault write paths, and a post-repair rescan.
+- Batch repair is a future opt-in workflow requiring per-file transparency and recovery safeguards.
+- No fabricated percentages, demo issue counts presented as real, hidden file writes or “automatically fixed your Vault” claims.
+
+### Website information architecture and launch sequencing
+
+The **approved static Coming Soon page is unchanged**. Retain its hero, four pillars, SHISO mascot, Kit signup, warm technical aesthetic, accessibility and metadata. Do not add Vault Health percentages or live SHISO operation widgets using demo values. This is a master-plan update only.
+
+At full launch, show the real product first. A compact **Meet Shiso** story may introduce Create, Explore, Nutrition and Vault Intelligence as connected capabilities when individually verified. A later **Vault Intelligence** feature page can show a *real* score and authenticated screenshot, explain how health is measured and describe review-before-repair protections.
+
+Proposed delivery priority mirrors the application plan:
+
+1. Finish and browser-accept **Nutrition with Shiso** (Basic remains free/offline).
+2. Stabilize provider-neutral conversation and the effective AI Settings selection.
+3. Complete **Create with Shiso** with conversational draft refinement and explicit Save.
+4. Complete **Explore My Vault** with grounded recipe results, then phase out redundant Ask My Kitchen entry.
+5. Integrate **Vault Intelligence with Shiso**, preserving the dashboard, scoring, formatting corrections and metadata recovery; add safe preview/authorization, then opt-in batch repairs.
+6. Test cross-capability flows before release. Defer unrelated animation and promotional promises.
+
+**Release control:** Sid approves any actual launch/deployment. None of these product commitments establish that their Shiso integrations exist today. Current app work is substantially uncommitted in Luna's local checkout, and the application roadmap changes reside in a separate draft PR pending reconciliation. Website source and public claims change only after verified feature readiness and separate release approval.
